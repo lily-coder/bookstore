@@ -1,11 +1,12 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Math-Magicians
+# Bookstore
 
-> "Math magicians" is a Single Page App (SPA), which is a calculator that allows users to:
-- Make simple calculations.
-- Read a random math-related quote.
-- Enable users to perform all math operations.
+> The "Bookstore" is a MVP version of a website that allows you to:
+
+- Display a list of books.
+- Add a book.
+- Remove a selected book.
 
 ![screenshot](./Bookstore.PNG)
 
