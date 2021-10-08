@@ -1,9 +1,28 @@
 /* eslint no-unused-vars: 0 no-undef: 0 */
-import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Navbar from './Navbar.js';
+import BookList from './BookList.js';
+import Categories from '../pages/Categories.js';
+import styles from './App.css';
 
-export default function App() {
+function App() {
   return (
-    <div>
-    </div>
+    <>
+      <Route>
+        <div>
+          <Navbar />
+          <Switch>
+            <Route exact path='/'>
+              <BookList />
+            </Route>
+            <Route exact path='/Categories'>
+              <Categories />
+            </Route>
+          </Switch>
+        </div>
+      </Route>
+    </>
   );
 }
+
+export default App;

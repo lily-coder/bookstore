@@ -1,8 +1,8 @@
 const BookOperations = () => (
-  <div>
-    <p>Comments</p>
-    <p>Remove</p>
-    <p>Edit</p>
+  <div className='book-operations'>
+    <p className='book-operation'>Comments</p><hr />
+    <p className='book-operation'>Remove</p><hr />
+    <p className='book-operation'>Edit</p>
   </div>
 );
 

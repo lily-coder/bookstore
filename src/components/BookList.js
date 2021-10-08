@@ -1,10 +1,11 @@
 /* eslint no-unused-vars: 0 no-undef: 0 */
-import React from 'react';
-import BookForm from './Bookform.js';
+import React, { useState } from 'react';
+import BookForm from './BookForm.js';
+import BookDisplay from './BookDisplay.js';
 
 const BookList = () => {
-  const bookslist = {
-    bookslists: [
+  const initialObject = {
+    booksList: [
       {
         aboutBook: {
           category: 'Action',
@@ -14,7 +15,7 @@ const BookList = () => {
         bookProgress: {
           chapterName: 'Chapter 17',
           chapter: '17',
-          completed: '64%',
+          completed: 64,
         },
       },
       {
@@ -26,7 +27,7 @@ const BookList = () => {
         bookProgress: {
           chapterName: 'Chapter 3: A Lesson Learned',
           chapter: '3',
-          completed: '8%',
+          completed: 8,
         },
       },
       {
@@ -38,11 +39,39 @@ const BookList = () => {
         bookProgress: {
           chapterName: 'Introduction',
           chapter: '17',
-          completed: '0%',
+          completed: 0,
         },
       },
     ],
   };
+
+  const [booklists, setBookLists] = useState(initialObject);
+
+  const addBook = (newBook) => setBookLists((booklist) => {
+    const { booksList } = booklist;
+    return { booksList: booksList.concat(newBook) };
+  });
+
+  return (
+    <>
+      <section>
+        <ul>
+          <li className='book-list'>
+            <BookDisplay book={booklists.booksList[0]} />
+          </li>
+          <li className='book-list'>
+            <BookDisplay book={booklists.booksList[1]} />
+          </li>
+          <li className='book-list'>
+            <BookDisplay book={booklists.booksList[2]} />
+          </li>
+        </ul>
+      </section>
+      <section>
+        <BookForm addBook={addBook} />
+      </section>
+    </>
+  );
 };
 
 export default BookList;
