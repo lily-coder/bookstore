@@ -13,7 +13,7 @@
       "airbnb-base",
       "plugin:import/errors",
       "plugin:import/warnings",
-      "plugin:import/typescript",
+      "plugin:import/typescript"
     ],
     "rules": {
       "no-shadow": "off",
@@ -26,12 +26,6 @@
     "ignorePatterns": [
       "dist/",
       "build/"
-    ],
-    "settings": {
-      "import/resolver": {
-        "node": {
-          "extensions": [".js", ".jsx", ".ts", ".tsx"]
-        }
-      }
-    }
-  }
+    ]
+  
+}
