@@ -8,7 +8,10 @@ const currentChapter = (num, title) => {
   if (num) {
     return `Chapter ${num}`;
   }
-  return `${title}`;
+  if (title) {
+    return `${title}`;
+  }
+  return '';
 };
 
 const currentProgress = (props) => {
@@ -41,8 +44,6 @@ currentProgress.defaultProps = {
 
 currentProgress.propTypes = {
   bookProgress: PropTypes.object,
-  chapter: PropTypes.number,
-  chapterName: PropTypes.string,
 };
 
 export default currentProgress;

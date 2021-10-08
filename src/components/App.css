@@ -55,7 +55,7 @@ ul {
 }
 
 .book-operation {
-  margin: 0.6rem;
+  margin: 1rem;
   color: #0290ff;
 }
 
@@ -73,6 +73,7 @@ ul {
   color: rgb(116, 117, 116);
   margin: 0.6rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
 .book-list {
@@ -147,13 +148,14 @@ form {
 }
 
 .book-input {
-  width: 60%;
+  width: 30%;
   border: 1px solid rgb(116, 117, 116);
   margin: 1rem;
   height: 2.5rem;
   border-radius: 5px;
 }
 
+.book-author-input,
 .book-select {
   width: 20%;
   border: 1px solid rgb(116, 117, 116);
