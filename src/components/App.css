@@ -1,0 +1,175 @@
+body {
+  background-color: #fafafa;
+  font-family: Verdana, Georgia, Tahoma, sans-serif;
+}
+
+a,
+.gray {
+  color: rgb(116, 117, 116);
+}
+
+.active-link,
+.black {
+  color: black;
+}
+
+.blue {
+  color: #0290ff;
+}
+
+.header {
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar-links {
+  display: flex;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  margin-left: 4rem;
+}
+
+.nav-item {
+  margin: 0% 1rem;
+  font-size: 0.9em;
+}
+
+.book-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-operations {
+  display: flex;
+  cursor: pointer;
+}
+
+.book-operation {
+  margin: 0.6rem;
+  color: #0290ff;
+}
+
+.book-author {
+  margin: 0.6rem;
+  color: #0290ff;
+}
+
+.book-title {
+  color: black;
+  margin: 0.6rem;
+}
+
+.book-category {
+  color: rgb(116, 117, 116);
+  margin: 0.6rem;
+  font-weight: bold;
+}
+
+.book-list {
+  background-color: white;
+  border: 1px solid rgb(116, 117, 116);
+  padding: 1rem;
+  margin: 1rem;
+}
+
+.update-progress {
+  padding: 0.8rem 0.5rem;
+  border: none;
+  cursor: pointer;
+  background-color: #0291ff;
+  color: white;
+  border-radius: 5px;
+  width: 15rem;
+}
+
+.completed-chapter {
+  display: flex;
+  flex-direction: column;
+}
+
+.book-title-circle {
+  width: 65%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chapter-progress {
+  width: 25%;
+}
+
+.completed-chapter-details {
+  margin: 0.5rem;
+}
+
+.current-chapter-head {
+  font-size: 0.8em;
+}
+
+.completion {
+  font-size: 2.5em;
+}
+
+.progress-percentage {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.percentage-circle {
+  margin: 1rem;
+  width: 90px;
+  height: 90px;
+}
+
+.completion-section {
+  display: flex;
+}
+
+.under-construction {
+  margin-left: 4rem;
+}
+
+.add-book,
+form {
+  margin: auto;
+  margin-top: 2rem;
+  margin-left: 4rem;
+}
+
+.book-input {
+  width: 60%;
+  border: 1px solid rgb(116, 117, 116);
+  margin: 1rem;
+  height: 2.5rem;
+  border-radius: 5px;
+}
+
+.book-select {
+  width: 20%;
+  border: 1px solid rgb(116, 117, 116);
+  margin: 1rem;
+  height: 2.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-submit {
+  border: 1px solid rgb(116, 117, 116);
+  background-color: #0291ff;
+  color: white;
+  margin: 1rem;
+  width: 10%;
+  height: 2.5rem;
+  border-radius: 5px;
+  cursor: pointer;
+}

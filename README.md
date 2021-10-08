@@ -8,7 +8,7 @@
 - Add a book.
 - Remove a selected book.
 
-![screenshot](./Bookstore.PNG)
+<!-- ![screenshot](./Bookstore.PNG) -->
 
 ## Built With
 
@@ -20,7 +20,7 @@
 
 ## Live Demo
 
-[Live Demo Link](https://lily-coder.github.io/bookstore/)
+[Live Demo Link](https://bookstore455.herokuapp.com/)
 
 ## Getting Started
 
