@@ -18,9 +18,9 @@
 - Html5 and Css3
 - npm
 
-<!-- ## Live Demo
+## Live Demo
 
-[Live Demo Link](https://bookstore455.herokuapp.com/) -->
+[Live Demo Link](https://bookstore455.herokuapp.com/)
 
 ## Getting Started
 
