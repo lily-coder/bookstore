@@ -175,3 +175,7 @@ form {
   border-radius: 5px;
   cursor: pointer;
 }
+
+.add-a-book {
+  margin: 1.3rem;
+}

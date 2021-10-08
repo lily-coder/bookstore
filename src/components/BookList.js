@@ -15,7 +15,7 @@ const BookList = () => {
   });
 
   if (booksList.length === 0) {
-    content = <li>ADD A BOOK</li>;
+    content = <li className='add-a-book'>ADD A BOOK</li>;
   } else {
     content = booksList.map((book) => (
       <li key={book.aboutBook.id} className='book-list'>

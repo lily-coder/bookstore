@@ -3,45 +3,6 @@ const REMOVE_BOOK = 'bookStore/books/REMOVE_BOOK';
 
 const initialState = {
   booksList: [
-    {
-      aboutBook: {
-        id: '1',
-        title: 'The Hunger Games',
-        author: 'Suzanne Collins',
-        category: 'action',
-      },
-      bookProgress: {
-        chapter: 17,
-        chapterName: null,
-        completed: 65,
-      },
-    },
-    {
-      aboutBook: {
-        id: '2',
-        title: 'Dune',
-        author: 'Frank Herbert',
-        category: 'science fiction',
-      },
-      bookProgress: {
-        chapter: 3,
-        chapterName: 'A Lesson Learned',
-        completed: 8,
-      },
-    },
-    {
-      aboutBook: {
-        id: '3',
-        title: 'Capital in the 21st Century',
-        author: 'Suzanne Collins',
-        category: 'economy',
-      },
-      bookProgress: {
-        chapter: null,
-        chapterName: 'Introduction',
-        completed: 0,
-      },
-    },
   ],
 };
 
