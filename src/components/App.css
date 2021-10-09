@@ -49,7 +49,7 @@ hr {
   color: #0290ff;
   position: absolute;
   top: 4rem;
-  right: 4rem;
+  right: 3.5rem;
 }
 
 .nav-item {
@@ -60,6 +60,7 @@ hr {
 .book-body {
   width: 95%;
   margin: auto;
+  align-content: center;
 }
 
 .book-card {
@@ -70,10 +71,12 @@ hr {
 .book-operations {
   display: flex;
   cursor: pointer;
+  width: 20rem;
 }
 
 .book-operation {
-  margin: 1rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   color: #0290ff;
 }
 
@@ -108,6 +111,7 @@ hr {
   color: white;
   border-radius: 5px;
   width: 12rem;
+  font-weight: bold;
 }
 
 .completed-chapter {
@@ -169,7 +173,7 @@ form {
 }
 
 .book-input {
-  width: 30%;
+  width: 55%;
   border: 1px solid rgba(116, 117, 116, 0.377);
   margin: 1rem;
   height: 2.5rem;
@@ -182,6 +186,7 @@ form {
   margin: 1rem;
   height: 2.5rem;
   border-radius: 5px;
+  display: none;
 }
 
 .book-select {
@@ -200,12 +205,18 @@ form {
   background-color: #0291ff;
   color: white;
   margin: 1rem;
-  width: 10%;
+  width: 12rem;
   height: 2.5rem;
   border-radius: 5px;
   cursor: pointer;
+  align-self: flex-end;
 }
 
 .add-a-book {
   margin: 1.3rem;
+}
+
+.bottom-sec {
+  margin-left: 5.5rem;
+  margin-right: 3.5rem;
 }

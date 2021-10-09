@@ -24,7 +24,7 @@ const currentProgress = (props) => {
         CURRENT CHAPTER
       </span>
       <span className='completed-chapter-details black'>
-        {currentChapter(chapter, chapterName)}
+        Chapter One {currentChapter(chapter, chapterName)}
       </span>
       <button type="button" className='update-progress completed-chapter-details'>
         UPDATE PROGRESS
