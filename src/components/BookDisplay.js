@@ -14,7 +14,7 @@ const BookDisplay = (props) => {
       <div className='book-title-circle'>
         <div>
           <Book bookInfo={aboutBook} />
-          <BookOperations />
+          <BookOperations bookId={aboutBook.id}/>
         </div>
         <div>
           <CompletionChart bookProgress={bookProgress} />
@@ -33,6 +33,7 @@ BookDisplay.defaultProps = {
 
 BookDisplay.propTypes = {
   book: PropTypes.object,
+  bookProgress: PropTypes.object,
 };
 
 export default BookDisplay;

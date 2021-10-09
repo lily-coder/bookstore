@@ -7,7 +7,7 @@ const CompletionChart = (props) => {
   const { completed } = bookProgress;
 
   return (
-    <div class='completion-section'>
+    <div className='completion-section'>
       <div className="percentage-circle">
           <PercentageCircle completed={completed} />
       </div>
@@ -21,14 +21,12 @@ const CompletionChart = (props) => {
 
 CompletionChart.defaultProps = {
   bookProgress: {
-    completed: null,
+    completed: 0,
   },
-  completed: null,
 };
 
 CompletionChart.propTypes = {
   bookProgress: PropTypes.object,
-  completed: PropTypes.number,
 };
 
 export default CompletionChart;
