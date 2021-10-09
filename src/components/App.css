@@ -1,6 +1,7 @@
 body {
-  background-color: #fafafa;
+  background-color: #f5f6fa;
   font-family: Verdana, Georgia, Tahoma, sans-serif;
+  margin: auto;
 }
 
 a,
@@ -36,12 +37,30 @@ ul {
 .navbar {
   display: flex;
   align-items: center;
-  margin-left: 4rem;
+  padding: 0% 7rem;
+  background-color: white;
+}
+
+hr {
+  color: rgba(116, 117, 116, 0.377);
+}
+
+.fa-user {
+  color: #0290ff;
+  position: absolute;
+  top: 4rem;
+  right: 3.5rem;
 }
 
 .nav-item {
   margin: 0% 1rem;
   font-size: 0.9em;
+}
+
+.book-body {
+  width: 95%;
+  margin: auto;
+  align-content: center;
 }
 
 .book-card {
@@ -52,10 +71,12 @@ ul {
 .book-operations {
   display: flex;
   cursor: pointer;
+  width: 20rem;
 }
 
 .book-operation {
-  margin: 1rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
   color: #0290ff;
 }
 
@@ -78,7 +99,6 @@ ul {
 
 .book-list {
   background-color: white;
-  border: 1px solid rgb(116, 117, 116);
   padding: 1rem;
   margin: 1rem;
 }
@@ -90,7 +110,8 @@ ul {
   background-color: #0291ff;
   color: white;
   border-radius: 5px;
-  width: 15rem;
+  width: 12rem;
+  font-weight: bold;
 }
 
 .completed-chapter {
@@ -140,6 +161,10 @@ ul {
   margin-left: 4rem;
 }
 
+.add-book {
+  font-size: 1.2rem;
+}
+
 .add-book,
 form {
   margin: auto;
@@ -148,8 +173,8 @@ form {
 }
 
 .book-input {
-  width: 30%;
-  border: 1px solid rgb(116, 117, 116);
+  width: 55%;
+  border: 1px solid rgba(116, 117, 116, 0.377);
   margin: 1rem;
   height: 2.5rem;
   border-radius: 5px;
@@ -157,32 +182,41 @@ form {
 
 .book-author-input {
   width: 20%;
-  border: 1px solid rgb(116, 117, 116);
+  border: 1px solid rgba(116, 117, 116, 0.377);
   margin: 1rem;
   height: 2.5rem;
   border-radius: 5px;
+  display: none;
 }
 
 .book-select {
+  border: 1px solid rgba(116, 117, 116, 0.377);
+  color: rgb(116, 117, 116);
   width: 20%;
-  border: 1px solid rgb(116, 117, 116);
   margin: 1rem;
   height: 2.5rem;
+  outline: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .input-submit {
-  border: 1px solid rgb(116, 117, 116);
+  border: 1px solid rgba(116, 117, 116, 0.377);
   background-color: #0291ff;
   color: white;
   margin: 1rem;
-  width: 10%;
+  width: 12rem;
   height: 2.5rem;
   border-radius: 5px;
   cursor: pointer;
+  align-self: flex-end;
 }
 
 .add-a-book {
   margin: 1.3rem;
+}
+
+.bottom-sec {
+  margin-left: 5.5rem;
+  margin-right: 3.5rem;
 }

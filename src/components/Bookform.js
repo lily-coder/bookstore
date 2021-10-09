@@ -40,9 +40,9 @@ const BookForm = () => {
 
   return (
         <>
-        <hr className='add-book'/>
-        <h2 className='gray add-book'>ADD A NEW BOOK</h2>
-        <form action="POST" onSubmit={addBookToList}>
+        <hr className='add-book bottom-sec'/>
+        <h2 className='gray add-book bottom-sec'>ADD NEW BOOK</h2>
+        <form name='input-form' action="POST" onSubmit={addBookToList}>
           <input
             className='book-input'
             type='text'
@@ -53,7 +53,7 @@ const BookForm = () => {
             required
           />
           <input
-            className='book-author-input'
+            className='book-author-input d-none'
             type="text"
             value={addNewBook.author}
             placeholder="Author"
@@ -61,7 +61,7 @@ const BookForm = () => {
             onChange={onchangeBook}
             required />
           <select className='book-select' name='book-category'>
-            <option value='' disabled hidden>Category</option>
+            <option value='category' disabled selected>Category</option>
             <option value='Action'>Action</option>
             <option value='Science Fiction'>Science Fiction</option>
             <option value='Economy'>Economy</option>
