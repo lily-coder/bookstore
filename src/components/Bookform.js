@@ -1,6 +1,7 @@
 /* eslint no-unused-vars: 0 no-undef: 0 */
 import { useDispatch } from 'react-redux';
 import { v4 as uuidv4 } from 'uuid';
+import React, { useState } from 'react';
 import { addBook } from '../redux/books/books';
 
 const BookForm = () => {
@@ -9,9 +10,9 @@ const BookForm = () => {
   const addBookToList = (event) => {
     event.preventDefault();
 
-    const category = event.target[0].value;
-    const title = event.target[1].value;
-    const author = event.target[2].value;
+    const title = event.target[0].value;
+    const author = event.target[1].value;
+    const category = event.target[2].value;
 
     event.target.reset();
 
@@ -32,13 +33,33 @@ const BookForm = () => {
     dispatch(addBook(newBook));
   };
 
+  const [addNewBook, setAddNewBook] = useState({ title: '', author: '' });
+  const onchangeBook = (e) => {
+    setAddNewBook({ ...addNewBook, [e.target.name]: e.target.value });
+  };
+
   return (
         <>
         <hr className='add-book'/>
         <h2 className='gray add-book'>ADD A NEW BOOK</h2>
         <form action="POST" onSubmit={addBookToList}>
-          <input className='book-input' type='text' placeholder='Book Title'/>
-          <input className='book-author-input' type="text" placeholder="Author" required />
+          <input
+            className='book-input'
+            type='text'
+            value={addNewBook.title}
+            placeholder='Book Title'
+            name='title'
+            onChange={onchangeBook}
+            required
+          />
+          <input
+            className='book-author-input'
+            type="text"
+            value={addNewBook.author}
+            placeholder="Author"
+            name='author'
+            onChange={onchangeBook}
+            required />
           <select className='book-select' name='book-category'>
             <option value='' disabled hidden>Category</option>
             <option value='Action'>Action</option>

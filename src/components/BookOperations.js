@@ -10,6 +10,7 @@ const BookOperations = (props) => {
   const removeBookFromList = () => {
     dispatch(removeBook(bookId));
   };
+
   return (
     <div className='book-operations'>
       <p className='book-operation'>Comments</p><hr />
