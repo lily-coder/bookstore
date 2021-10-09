@@ -1,5 +1,6 @@
 /* eslint no-unused-vars: 0 no-undef: 0 */
 import { NavLink } from 'react-router-dom';
+import { FaUser } from 'react-icons/fa';
 
 const Navbar = () => {
   const links = [
@@ -28,6 +29,7 @@ const Navbar = () => {
           </p>
         ))}
         </div>
+        <div className='fa-user'><FaUser/></div>
       </div>
     </>
   );

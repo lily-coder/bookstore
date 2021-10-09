@@ -1,6 +1,7 @@
 body {
-  background-color: #fafafa;
+  background-color: #f5f6fa;
   font-family: Verdana, Georgia, Tahoma, sans-serif;
+  margin: auto;
 }
 
 a,
@@ -36,12 +37,29 @@ ul {
 .navbar {
   display: flex;
   align-items: center;
-  margin-left: 4rem;
+  padding: 0% 7rem;
+  background-color: white;
+}
+
+hr {
+  color: rgba(116, 117, 116, 0.377);
+}
+
+.fa-user {
+  color: #0290ff;
+  position: absolute;
+  top: 4rem;
+  right: 4rem;
 }
 
 .nav-item {
   margin: 0% 1rem;
   font-size: 0.9em;
+}
+
+.book-body {
+  width: 95%;
+  margin: auto;
 }
 
 .book-card {
@@ -78,7 +96,6 @@ ul {
 
 .book-list {
   background-color: white;
-  border: 1px solid rgb(116, 117, 116);
   padding: 1rem;
   margin: 1rem;
 }
@@ -90,7 +107,7 @@ ul {
   background-color: #0291ff;
   color: white;
   border-radius: 5px;
-  width: 15rem;
+  width: 12rem;
 }
 
 .completed-chapter {
@@ -140,6 +157,10 @@ ul {
   margin-left: 4rem;
 }
 
+.add-book {
+  font-size: 1.2rem;
+}
+
 .add-book,
 form {
   margin: auto;
@@ -149,7 +170,7 @@ form {
 
 .book-input {
   width: 30%;
-  border: 1px solid rgb(116, 117, 116);
+  border: 1px solid rgba(116, 117, 116, 0.377);
   margin: 1rem;
   height: 2.5rem;
   border-radius: 5px;
@@ -157,23 +178,25 @@ form {
 
 .book-author-input {
   width: 20%;
-  border: 1px solid rgb(116, 117, 116);
+  border: 1px solid rgba(116, 117, 116, 0.377);
   margin: 1rem;
   height: 2.5rem;
   border-radius: 5px;
 }
 
 .book-select {
+  border: 1px solid rgba(116, 117, 116, 0.377);
+  color: rgb(116, 117, 116);
   width: 20%;
-  border: 1px solid rgb(116, 117, 116);
   margin: 1rem;
   height: 2.5rem;
+  outline: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
 .input-submit {
-  border: 1px solid rgb(116, 117, 116);
+  border: 1px solid rgba(116, 117, 116, 0.377);
   background-color: #0291ff;
   color: white;
   margin: 1rem;

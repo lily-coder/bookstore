@@ -42,7 +42,7 @@ const BookForm = () => {
         <>
         <hr className='add-book'/>
         <h2 className='gray add-book'>ADD A NEW BOOK</h2>
-        <form action="POST" onSubmit={addBookToList}>
+        <form name='input-form' action="POST" onSubmit={addBookToList}>
           <input
             className='book-input'
             type='text'
@@ -61,7 +61,7 @@ const BookForm = () => {
             onChange={onchangeBook}
             required />
           <select className='book-select' name='book-category'>
-            <option value='' disabled hidden>Category</option>
+            <option value='category' disabled selected>Category</option>
             <option value='Action'>Action</option>
             <option value='Science Fiction'>Science Fiction</option>
             <option value='Economy'>Economy</option>

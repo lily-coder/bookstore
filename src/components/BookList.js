@@ -11,7 +11,6 @@ const BookList = () => {
   useEffect(() => {
     dispatch(fetchBooks());
   }, []);
-
   const booksList = useSelector((state) => state.booksReducer.booksList, shallowEqual);
 
   let content;
@@ -28,7 +27,7 @@ const BookList = () => {
 
   return (
     <>
-      <section>
+      <section className='book-body'>
         <ul>
         { content }
         </ul>
