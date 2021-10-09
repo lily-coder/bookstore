@@ -8,7 +8,7 @@
 - Add a book.
 - Remove a selected book.
 
-<!-- ![screenshot](./Bookstore.PNG) -->
+[screenshot](./bookstore.PNG)
 
 ## Built With
 
