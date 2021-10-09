@@ -18,7 +18,7 @@ const PercentageCircle = (props) => {
           cutout: '80%',
           backgroundColor: [g, '#f5f6fa'],
           hoverBackgroundColor: ['#4386bf', '#888'],
-          data: [(completed * 100), ((100 - completed) * 100)],
+          data: [(completed * 100), ((100 - completed) * 100)] || 0,
         },
       ],
     };

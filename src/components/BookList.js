@@ -1,18 +1,20 @@
 /* eslint no-unused-vars: 0 no-undef: 0 */
-import React from 'react';
-import { useSelector, shallowEqual } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useDispatch, useSelector, shallowEqual } from 'react-redux';
+import { fetchBooks } from '../redux/books/books';
 import BookDisplay from './BookDisplay.js';
 import BookForm from './Bookform.js';
 
 const BookList = () => {
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    dispatch(fetchBooks());
+  }, []);
+
   const booksList = useSelector((state) => state.booksReducer.booksList, shallowEqual);
 
   let content;
-
-  const addBook = (newBook) => setBookLists((booklist) => {
-    const { booksList } = booklist;
-    return { booksList: booksList.concat(newBook) };
-  });
 
   if (booksList.length === 0) {
     content = <li className='add-a-book'>ADD A BOOK</li>;

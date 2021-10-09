@@ -35,15 +35,16 @@ const currentProgress = (props) => {
 
 currentProgress.defaultProps = {
   bookProgress: {
-    chapter: null,
-    chapterName: null,
+    chapter: 1,
+    chapterName: 'Not specified',
   },
-  chapter: null,
-  chapterName: null,
 };
 
 currentProgress.propTypes = {
-  bookProgress: PropTypes.object,
+  bookProgress: PropTypes.shape({
+    chapter: PropTypes.number,
+    chapterName: PropTypes.string,
+  }),
 };
 
 export default currentProgress;
