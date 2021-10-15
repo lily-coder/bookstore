@@ -17,6 +17,7 @@
 - Redux
 - Html5 and Css3
 - npm
+- node
 
 ## Live Demo
 
